@@ -26,7 +26,7 @@ class TestCalculator(unittest.TestCase):
 
     ######## Partner 2
     def test_divide_by_zero(self): # 1 assertion
-        self.assertRaises(ZeroDivisionError):\
+        self.assertRaises(ZeroDivisionError):
             (div(0, 5))
 
 
@@ -36,7 +36,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(logarithm(25, 5), 2)
 
     def test_log_invalid_base(self): # 1 assertion
-        self.assertRaises(ValueError):\
+        self.assertRaises(ValueError):
             (logarithm(0))
     #     fill in code
     # ##########################
