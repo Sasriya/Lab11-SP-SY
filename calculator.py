@@ -6,7 +6,7 @@ One function per operation, in order.
 """
 # First example
 import math
-<<<<<<< HEAD
+
 def add(a, b):
    return a + b
 
