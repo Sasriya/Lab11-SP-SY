@@ -28,8 +28,11 @@ def logarithm(a, b):
     except ValueError:
         return 0
 
-def exponent(a, b):
-    return a ** b
+def square_root(a):
+    try:
+        return math.sqrt(a)
+    except ValueError:
+        return 0
 
-
-
+def hypotenuse(a, b):
+    return 0
