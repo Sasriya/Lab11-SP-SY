@@ -6,21 +6,25 @@ One function per operation, in order.
 """
 # First example
 import math
-
+<<<<<<< HEAD
 def add(a, b):
-    return a + b
+   return a + b
 
-def subtract(a, b):
-    return a - b
-
-def multiply(a, b):
+def mul(a, b):
     return a * b
 
-def divide(a, b):
+def div(a, b):
     try:
         return b / a
     except ZeroDivisionError:
-        return 0
+        return 0# raise ZeroDivisionError if a == 0
+
+def exp(a, b):
+    return a**b
+
+
+def subtract(a, b):
+    return a - b
 
 def logarithm(a, b):
     try:
@@ -35,4 +39,4 @@ def square_root(a):
         return 0
 
 def hypotenuse(a, b):
-    return 0
+    return math.hypot(a, b)
